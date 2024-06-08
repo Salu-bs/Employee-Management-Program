@@ -104,11 +104,7 @@ h5{
     letter-spacing: -0.32px;
 }
 .menu-ul li button {
-    /* display: flex; */
-    /* gap: 15px; */
-    /* padding: 24px 77px 17px 0px; */
     background: linear-gradient(150deg, #301F81 12.51%, #0F0441 89.53%);
-
     align-items: center;
     justify-content: flex-start;
     color: rgba(255, 255, 255, 0.70);
