@@ -1,0 +1,174 @@
+<!-- header -->
+
+<!-- header close -->
+
+<%- include('layouts/mainheader')%>
+
+<!-- sidedash board -->
+<%- include('layouts/sidebarDas')%>
+
+<!-- sidedash board -->
+
+
+            <div class="main_head">
+                <div class="navbar">
+                    <div class="main_section">
+                        <h6>Dashboard / Employees</h6>
+                        <h3>Employees</h3>
+                    </div>
+
+                    <div class="search_box">
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input type="search" id="search" onkeyup="search()" placeholder="search" autocomplete="off">
+
+
+                            <div class="search_sub">
+                                <i class="fa-regular fa-bell"></i>
+
+                                <img src="/images/Avatar Style 6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div   id="mainer" class="main">
+                    <div class="sub_header">
+                        <div class="sub-headsection">
+                            <h4>Employees List</h4>
+                            <select class="txt-count" id="employeelist">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4"selected>4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              
+                            </select>
+                            <span id="employeeLength"> of </span>
+                            <div class="btn_first">
+
+
+                                <button onclick="addemployeeopn(),resetForm()"id="addEmployeeOpen" class="btn btn-primary">Add
+                                    Employee</button>
+                            </div>
+                        </div>
+                        <table id="mytable" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sl.No <span><i class="fa-solid fa-chevron-down"></i></span>
+                                    </th>
+                                    <th scope="col">Name<span><i class="fa-solid fa-chevron-down"></i></span>
+                                    </th>
+                                    <th scope="col">Email <span><i class="fa-solid fa-chevron-down"></i></span>
+                                    </th>
+                                    <th scope="col">phone <span><i class="fa-solid fa-chevron-down"></i></span>
+                                    </th>
+                                    <th scope="col">Gender <span><i class="fa-solid fa-chevron-down"></i></span>
+                                    </th>
+                                    <th scope="col">DOB<span><i class="fa-solid fa-chevron-down"></i></span>
+                                    </th>
+                                    <th scope="col">Country <span><i
+                                                class="fa-solid fa-chevron-down"></i></span></th>
+<th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="table_body">
+                                <tr>
+                                <!-- <td scope="row">#01</td>
+                                            <td>Mr. Michael Johnson</td>
+                                            <td>michaeljohnson@example.com</td>
+                                            <td>5551234567</td>
+                                            <td>Male</td>
+                                            <td>10 December 1985</td>
+                                            <td>USA</td>
+                                            
+                                            <td > -->
+                                <!-- <span class="dots">
+                                                  <button class="dots-button">  <i class="fa-solid fa-ellipsis"></i></button>
+                                                    <div class="sub-dots" style="display:none;" >
+                                                      <button><i class="material-symbols-outlined">
+                                                            visibility
+                                                            </i><p>View Details</p></button>
+                                                        <button><i class="material-symbols-outlined">
+                                                            edit
+                                                            </i><p>Edit </p></button>
+                                                        <button><i class="material-symbols-outlined">
+                                                            delete
+                                                            </i> </><p>Delete </p></button> 
+                                                    </div>
+                                                </span>
+                                                </div>
+                                            <!</td> -->
+                                        </tr>  
+                            </tbody>
+                            
+
+                        </table>
+
+        </div>
+     
+
+
+    <!-- pagination close -->
+    <%- include('layouts/pagination')%>
+
+    
+    <!-- pagination close -->
+  
+
+    <!-- FINALFOOTER -->
+    <%- include('layouts/mainfinalFooter')%>
+
+
+    <!-- FINALFOOTER CLOSE -->
+
+
+
+
+<!-- ADD USER CUT TO THIS PLACE -->
+
+
+
+
+<%- include('layouts/addUser')%>
+
+<!-- ADD USER CLOSE -->
+
+
+
+    
+     <!--..........delete form.......................  -->
+     <%- include('layouts/deleteUser')%>
+
+    <!-- .................deleteform closing......... -->
+
+
+  <!-- delete succesfully form -->
+
+
+  <!-- edit popup start -->
+  
+  <%- include('layouts/popup')%>
+
+  <!-- edit popup close -->
+
+
+
+
+
+
+
+
+
+    </div>
+   </header>
+   <div onclick="closeup()" id="overlay"></div>
+   <div onclick="modaal()" id="modal"></div>
+
+
+   <%- include('layouts/mainFooter')%>

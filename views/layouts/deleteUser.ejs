@@ -1,0 +1,20 @@
+<form id="deleteform" class="modal-content ">
+    <div class="deletes containers">
+        <div class="delete-box">
+            <h3 class="delete">Delete Account</h3>
+            <div class="icon">
+                <button type="button" onclick="closeup()" id="deleteformclose">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+        <p>Are you sure you want to delete your account?</p>
+
+        <section class="pt-4 button d-flex justify-content-end bg footer w-100">
+
+            <button type="button" onclick="closeup()" id="deleteformcancel"  class=" deletebtn  cancel-btn">Cancel</button>
+            <button type="button" id="DELETEEMPLOYEEbtn"onclick="deletesuccessfully() " class="deletebtn delete-btn">Delete</button>
+
+        </section>
+    </div>
+</form>

@@ -1,0 +1,111 @@
+<%- include('layout/signupHeader')%>
+
+
+    
+<form id="loginForm" class="Sign-in-form">
+    <div id="error-message" class="error-message"></div>
+    <div id="success-message" class="success-message"></div>
+
+    <h2 class="title">Sign-in</h2>
+    <div class="input-field">
+        <i class="fas fa-user"></i>
+        <input type="email" name="email" placeholder="Email" required>
+        <span id="emailError" class="error-message"></span>
+    </div>
+    <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="password" placeholder="Password" required>
+        <span id="passwordError" class="error-message"></span>
+    </div>
+    <button type="submit" class="btn">Sign in</button>
+    <p class="social-text">Or sign in with social platform</p>
+    <div class="social-media">
+        <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="fab fa-google"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+</form>
+   
+    
+
+
+<form action="/register" method="POST" class="Sign-up-form">
+    <div id="error-meesage"class="error-meesage"></div>
+
+    <h2 class="title">Sign-up</h2>
+    <div class="input-field">
+        <i class="fas fa-user">
+            <input type="text" name="username" placeholder="Username"required>
+        </i>
+    </div>
+    <div class="input-field">
+        <i class="fas fa-envelope">
+            <input type="text" name="email" placeholder="Email"required>
+        </i>
+    </div>
+    <div class="input-field">
+        <i class="fas fa-lock">
+            <input type="password" name="password"  placeholder="password"required>
+        </i>
+    </div>
+   <button type="submit" class="btn">Sign Up</button>
+   <!-- <input type="submit" value="sign up"class="btn"> -->
+   <p class="social-text">Or sign in with social platform </p>
+   <div class="social-media">
+    <a href="#" class="social-icon">
+     <i class="fab fa-facebook"></i>
+    </a>
+    <a href="#" class="social-icon">
+        <i class="fab fa-twitter"></i>
+
+    </a>
+    <a href="#" class="social-icon">
+        <i class="fab fa-google"></i>
+
+    </a>
+    <a href="#" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+
+    </a>
+   </div>
+   <!-- <p class="account-text"> Already have an account? <a href="/" id="signinbtn2">Sign in</a></p> -->
+
+</form>
+</div>
+
+                      <!-- SINGNUP CLOSE -->
+
+
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+               <div class="content">
+                <h3>Member of Brand</h3>
+                <p>An employee management system or EMS is a tool that helps improve employee satisfaction and productivity to help a company achieve their overall goals. </p>
+                <button type="button" class="btn " id="signinbtn">Sign in </button>
+               </div> 
+               <img src="/images/signin.avif" alt="" class="image">
+            </div>
+        
+            <div class="panel right-panel">
+               <div class="content">
+                <h3>new of Brand</h3>
+                <p>An employee management system or EMS is a tool that helps improve employee satisfaction and productivity to help a company achieve their overall goals. </p>
+                <button type="button" class="btn "id="signupbtn" >Sign up </button>
+               </div> 
+               <img src="/images/sign up.avif" alt="" class="image">
+            </div>
+        </div>
+
+    </div>
+    <%- include('layout/signupFooter')%>
+    

@@ -1,0 +1,232 @@
+<!-- <div id="EmployeeForm" class="eployeeFormbag invisible-scrollbar"> -->
+<!-- <div id="EmployeeForm"> -->
+<form id="EmployeeForm"   class="eployeeFormbag invisible-scrollbar" enctype='multipart/form-data'>
+    <div id="addemployeeform">
+        <div class="header">
+
+            <h2 class="forms ">Add Employee</h2>
+            <div class="icon">
+                <button type="button" onclick="closeup()" id="addEmployeeFormClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+        <label for="upload" id="inputfile" class="upload">
+            <i class="bi bi-upload"></i>
+            <!-- <img  id="getimg" src="/"> -->
+            <h5>Upload Image</h5>
+            <p>PNG,JPG Files are allowed</p>
+            <input id="upload" class="form-control" type="file" name="image">
+        </label>
+
+
+    </div>
+    <!-- ******editform****** -->
+    <div id="editEmployeeForm">
+
+        <div class="mains">
+            <div class="header">
+                <h2 id="ediEmployeeheading" class="forms ">Edit Employee</h2>
+                <div class="icon">
+                    <button type="button" onclick="closeup()" id="editEmployeeFormClose">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="editing" id="displayimgbox">
+                <label for="uploading" id="editImg" class="getimg  d-flex flex-column align-items-center">
+                    <img id="getimg" src="/">
+                </label>
+                <label for="uploading" class="btns btn-light">change
+                </label>
+                <input type="file" id="uploading">
+            </div>
+        </div>
+    </div>
+
+    <!-- ***********8cosingedit form******** -->
+
+    <div class="row pt-4 " id="formsection">
+
+        <div class="col-lg-4 col-md-12">
+            <label for="salutation" class="form-label pb-2 
+                           important">Salutation</label>
+            <select id="salutation" class="form-select form-select-lg p-2" aria-label="Default select example">
+            <option value="" selected>Select</option>
+                <option value="Mr.">Mr</option>
+                <option value="Ms.">Ms</option>
+                <option value="Dr.">Dr</option>
+
+            </select>
+            <span id="salutation-error" class="empty"></span>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <label for="firstname" class="form-label pb-2 important fondspace">First
+                Name</label>
+            <input id="firstname" class="form-control form-control-lg" type="text" placeholder="Enter your Name"
+                aria-label=".form-control-sm example">
+            <span id="firstname-error" class="empty"></span>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <label for="lastname" class="form-label pb-2 important fondspace">Last
+                Name</label>
+            <input id="lastname" class="form-control form-control-lg" type="text" placeholder="Enter your Last Name"
+                aria-label=".form-control-sm example">
+                <span id="lastname-error" class="empty"></span>
+
+        </div>
+    </div>
+    <div class="row pt-4">
+        <div class="col-lg-6 col-sm-12">
+            <label for="username" class="form-label pb-2 important">Username</label>
+            <input id="username" type="text" class="form-control form-control-lg" placeholder="Enter your Username"
+                aria-describedby="emailHelp">
+                <span id="username-error" class="empty"></span>
+
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <label for="password" class="form-label pb-2 important fondspace">Password</label>
+            <input id="password" class="form-control form-control-lg" type="password" placeholder="enter  password"
+                aria-label=".form-control-sm example">
+                <span id="password-error" class="empty"></span>
+
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col-lg-6 col-sm-12">
+            <label for="emailaddress" class="form-label pb-2 important">Email
+                address</label>
+            <input id="emailaddress" type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                placeholder="Email@gmail.com" aria-describedby="emailHelp">
+                <span id="emailaddress-error" class="empty"></span>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <label for="number" class="form-label pb-2 important fondspace">Mobile
+                Number</label>
+            <input id="number" class="form-control form-control-lg" type="tel" placeholder="Enter mobile number"
+                aria-label=".form-control-sm example">
+                <span id="number-error" class="empty"></span>
+        </div>
+    </div>
+    <div class="row pt-4 align-items-center ">
+        <div class="col-lg-6 col-sm-12">
+            <label for="Birth" class="form-label important pb-2">Date of
+                Birth</label>
+            <input id="Birth" class="form-control form-control-lg" type="date" placeholder=""
+                aria-label=".form-control-sm example">
+                <span id="Birth-error" class="empty"></span>
+        </div>
+        <div id="Gender" class="col-lg-6 col-sm-12" >
+            <label for="last-name" class="form-label pb-2 important fondspace">Gender</label>
+            <div class="row">
+                <div class="form-check col-3 ms-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="male" value="male">
+                    <label class="form-check-label" for="male">
+                        male
+                    </label>
+                </div>
+                <div class="form-check col-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="female" value="female">
+                    <label class="form-check-label" for="female">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <span id="Gender-error" class="empty"></span>
+        </div>
+    </div>
+
+    <!-- qulification -->
+
+    <div class="row pt-4">
+
+        <div class="col-lg-12">
+            <label for="qualification" class="form-label pb-2 important">Qualification</label>
+            <input id="qualification" class="form-control form-control-lg" type="text"
+                placeholder="enter your qualification" aria-label=".form-control-sm example">
+                <span id="qualification-error" class="empty"></span>
+            </div>
+    </div>
+
+
+
+
+    <div class="row pt-4">
+
+        <div class="col-lg-12">
+            <label for="address" class="form-label pb-2 important">Address</label>
+            <input id="address" class="form-control form-control-lg" type="text" placeholder="enter Address"
+                aria-label=".form-control-sm example" >
+                <span id="address-error" class="empty"></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row pt-4">
+        <div class="col-lg-6 col-sm-12">
+            <label for="country" class="form-label pb-2 important fondspace">Country</label>
+            <select id="country" class="form-select form-select-lg p-2" aria-label="Default select example">
+                <option value="" selected>Select</option>
+                <option value="india">India</option>
+                <option value="brazil">brazil</option>
+                <option value="japan">japan</option>
+                <option value="canada">canada</option>
+            </select>
+            <span id="country-error" class="empty"></span>
+
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <label for="state" class="form-label pb-2 important fondspace">State</label>
+            <select id="state" class="form-select form-select-lg p-2" aria-label="select">
+                <option value="" selected>Select</option>
+                <option >kerala</option>
+                <option >odisha</option>
+                <option >rajasthan</option>
+                <option >Alberta</option>
+            </select>
+            <span id="state-error" class="empty"></span>
+
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col-lg-6">
+            <label for="city" class="form-label pb-2 important">City</label>
+            <input id="city" class="form-control form-control-lg" type="text" placeholder="enter city"
+                aria-label=".form-control-sm example" >
+                <span id="city-error" class="empty"></span>
+
+        </div>
+        <div class="col-lg-6">
+            <label for="pin" class="form-label pb-2 important fondspace">Pin/Zip</label>
+            <input id="pin" class="form-control form-control-lg" type="text" placeholder="enter "
+                aria-label=".form-control-sm example">
+                <span id="pin-error" class="empty"></span>
+        </div>
+    </div>
+    <!-- </div> -->
+
+
+
+
+    <section class="pt-4 button d-flex justify-content-end bg footer w-100">
+        <!-- <div class=" d-flex  bg footer w-100"> -->
+
+        <button type="button" onclick="closeup() " id="addEmployeeFormCancel" class="btn btn-light">Cancel</button>
+        <button type="button" onclick="addemployee()" id="Addemployee" class="btn btn-primary">Add
+            Employee</button>
+        <button type="button" onclick="update(),editsuccessfully() " id="updatedbtn" class="btn btn-primary">Save
+            Changes</button>
+
+        <!-- </div> -->
+    </section>
+
+</form>
+<!-- </div> -->
+<!-- </div> -->

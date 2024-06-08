@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/main.css"> 
+   
+
+    
+</head>
+<body>
+    <header>
+<!-- header -->
+        <header >
+            <div class="dashboard">
+                <div class="head">
+                    <div class="head_dash">
+                        <h5>Employee</h5>
+                        <h5>Management</h5>
+                    </div>
+                    <div class="menu">
+                        <ul class="menu-ul">
+                            <li  <  id="Dashboard">
+                                <i class="fa-solid fa-house"></i>
+                                <h5>Dashboard</h5>
+                            </li>
+    
+                            <li  id="employees">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <h5>Employees</h5>
+                            </li>
+    
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <h5>My Profile</h5>
+                            </li>
+    
+                            <li>
+                                <i class="fa-solid fa-lock"></i>
+                                <h5>Logout</h5>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="stackup">
+                        <h5>Powered by</h5>
+                        <!-- <img src="/images/image 1 (4).jpg" alt=""> -->
+                    </div>
+    
+                </div>
+        <!-- view details -->
+        <div class="main_head">
+            <div class="navbar">
+                <div class="main_section">
+                    <h6>Dashboard / Employees</h6>
+                    <h3>Employees</h3>
+                </div>
+                <div class="search_box">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input type="search" id="search" onkeydown="search()" placeholder="search" autocomplete="off">
+
+
+                        <div class="search_sub">
+                            <i class="fa-regular fa-bell"></i>
+
+                            <img src="/images/Avatar Style 6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mainers" class="main">
+                <form  id="viewdetailform" class="detailform">
+                    <div id="details-form">
+                     <div class="row justify-content-between">
+                         
+                         <div class="col-lg-12 bg col-md-12">
+                 <div class="bg-uploadmain">
+                 <div for="formFile" class="bgupload">
+                  <img src="/images/Background Image.png">
+                  <div class="photoupload">
+
+                     <img id="viewgetimag" src="/">
+                   </div>
+                  
+         
+                  </div>
+                 
+                 </div>
+                 <div class="center">
+                     <h5 id="Name">Mr. Michael Johnson</h5>
+                     <p id="Email">michaeljohnson@example.com</p>
+                 </div>
+                         </div>
+                     </div>
+                        
+                     <div class="row pt-4">
+                         <div class="col-lg-4 col-md-6">
+                             <div class="detailing">
+                     <h6>Gender</h6>
+                    <h6 id="Gender">  Male</h6>
+                    </div>
+                         </div>
+         
+                         <div class="col-lg-4 col-md-6">
+                             <div class="detailing">
+                  <h6>Age</h6>
+                  <h6 id="Age">38</h6>
+                 </div>
+                         </div>
+                           
+                       
+                         <div class="col-lg-4 col-md-6">
+                             <div id="dob" class="detailing">
+                                 <h6>Date of Birth</h6>
+                                 <h6 id="Dob">20 December 1985</h6>
+                                </div>
+                           </div>
+                        </div>
+                            
+                     <div class="row pt-4">
+                         <div class="col-lg-6 col-md-12">
+                             <div class="detailing second">
+                     <h6>Mobile Numberr</h6>
+                    <h6 id="Number">9876543210</h6>
+                    </div>
+                         </div>
+         
+                         <div class="col-lg-6 col-md-12">
+                             <div class="detailing second">
+                  <h6>Qualifications</h6>
+                  <h6 id="qualification">Bachelor's Degree</h6>
+                 </div>
+                         </div>
+                           
+                       
+                        
+                        </div>
+                  
+         
+                        <div class="row pt-4">
+                         <div class="col-lg-6 col-md-12">
+                             <div class="detailings second">
+                     <h6>Address</h6>
+                    <h6 id="Address">789 Pine St Dummy Address,
+                     Chicago, Texas, USA 123456</h6>
+                    </div>
+                         </div>
+         
+                         <div class="col-lg-6 col-md-12">
+                             <div class="detailings second pading">
+                  <h6>Username</h6>
+                  <h6 id="Username">michaeljohnson</h6>
+                 </div>
+                         </div>
+                           
+                        </div>
+         
+                        <div class="pt-4 button d-flex justify-content-end bg footer w-100">
+                             <button type="button"  id="DELETEEMPLOYEEbtns" class="deletebtn delete-btn">Delete</button>
+                             <button type="button" id="editbtns"   class="btn btn-primary">Edit Details</button>
+                     </div>
+                     </div>
+     
+                 </form>
+
+
+
+</div>
+
+<div class="footers"></div>
+
+<div class="footer">     
+    <div class="copyright">
+        <span class="footer_sub">
+            <h6>© 2023 All Rights Reserved</h6>
+            <h6>.Stackup</h6>
+        </span>
+        <div class="left ">
+            <span>Terms of Use</span>
+            <span>Privacy Policy</span>
+        </div>
+
+    </div>
+    
+</div>
+
+</div>
+            </div>
+        </header>
+       
+ <!-- add employee -->
+ <form id="EmployeeForm" class="eployeeFormbag invisible-scrollbar" enctype='multipart/form-data'>
+    <!-- ******editform****** -->
+    <div id="editEmployeeForm">
+
+        <div class="mains">
+                    <div class="header">
+                        <h2 id="ediEmployeeheading" class="forms ">Edit Employee</h2>
+                        <div class="icon">
+                            <button type="button" onclick="closeup()" id="editEmployeeFormClose">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                        <div class="editing" id="displayimgbox">
+                   <label for="uploading" id="editImg" class="getimg  d-flex flex-column align-items-center" >
+                        <img  id="getimg" src="/">
+                    </label>
+                    <label for="uploading" class="btns btn-light">change
+                    </label>
+                    <input  type="file" id="uploading">
+                    </div> 
+        </div>
+    </div>
+
+    <!-- ***********8cosingedit form******** -->
+
+    <div class="row pt-4 "id="formsection">
+
+        <div class="col-lg-4 col-md-12">
+            <label for="salutation" class="form-label pb-2 
+               important">Salutation</label>
+            <select id="salutation" class="form-select form-select-lg p-2"
+                aria-label="Default select example"onchange="validateSalutation()">
+                <option value="" selected>Select</option>
+                <option value="Mr.">Mr</option>
+                <option value="Ms.">Ms</option>
+                <option value="Dr.">Dr</option>
+
+            </select>
+            <span id="SalutationError"></span>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <label for="firstname" class="form-label pb-2 important fondspace">First
+                Name</label>
+            <input id="firstname" class="form-control form-control-lg" type="text" 
+                placeholder="Enter your Name" aria-label=".form-control-sm example"  onkeyup="validateFirstName()">
+                <span id="FirstNameError"class="empty"></span>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <label for="lastname" class="form-label pb-2 important fondspace">Last
+                Name</label>
+            <input id="lastname" class="form-control form-control-lg" type="text"
+                placeholder="Enter your Last Name" aria-label=".form-control-sm example"  onkeyup="validateLastName()">
+                <span id="LastNameError" class="empty"></span>
+
+        </div>
+    </div>
+    <div class="row pt-4">
+        <div class="col-lg-6 col-sm-12">
+            <label for="username" class="form-label pb-2 important">Username</label>
+            <input id="username" type="text" class="form-control form-control-lg"
+                placeholder="Enter your Username"
+                aria-describedby="emailHelp" onkeyup="validateUsername()">
+                <span id="UsernameError"class="empty"></span>
+
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <label for="password" class="form-label pb-2 important fondspace">Password</label>
+            <input id="password" class="form-control form-control-lg" type="password"
+                placeholder="enter  password" aria-label=".form-control-sm example" onkeyup="validatePassword()" >
+                <span id="PasswordError"class="empty"> </span>
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col-lg-6 col-sm-12">
+            <label for="emailaddress" class="form-label pb-2 important">Email
+                address</label>
+            <input id="emailaddress" type="email" class="form-control form-control-lg"
+                id="exampleInputEmail1" placeholder="Email@gmail.com"
+                aria-describedby="emailHelp" onkeyup="validateEmail()">
+                <span id="emailError"class="empty"></span>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <label for="number" class="form-label pb-2 important fondspace">Mobile
+                Number</label>
+            <input id="number" class="form-control form-control-lg" type="tel"
+                placeholder="Enter mobile number" aria-label=".form-control-sm example"  onkeyup="validateNumber()">
+                <span id="NumberError"class="empty"></span>
+        </div>
+    </div>
+    <div class="row pt-4 align-items-center ">
+        <div class="col-lg-6 col-sm-12">
+            <label for="Birth" class="form-label important pb-2">Date of
+                Birth</label>
+            <input id="Birth" class="form-control form-control-lg" type="date" placeholder=""
+                aria-label=".form-control-sm example" onchange="validateBirth()">
+                <span id="BirthError"class="empty"></span>
+        </div>
+        <div  id="Gender" class="col-lg-6 col-sm-12" onclick="validateGender()">
+            <label for="last-name" class="form-label pb-2 important fondspace">Gender</label>
+            <div class="row">
+                <div class="form-check col-3 ms-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                        id="male" value="male">
+                    <label class="form-check-label" for="male">
+                        male
+                    </label>
+                </div>
+                <div class="form-check col-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                        id="female" value="female" >
+                    <label class="form-check-label" for="female">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <span id="GenderError" class="empty"> </span>
+        </div>
+    </div>
+
+    <!-- qulification -->
+
+    <div class="row pt-4">
+
+        <div class="col-lg-12">
+            <label for="qualifications" class="form-label pb-2 important">Qualification</label>
+            <input id="qualifications" class="form-control form-control-lg" type="text"
+                placeholder="enter your qualification" aria-label=".form-control-sm example" onclick="validateQualification()" onkeyup="validateQualification()">
+                <span id="QualificationError"class="empty"></span>
+        </div>
+    </div>
+
+
+
+
+    <div class="row pt-4">
+
+        <div class="col-lg-12">
+            <label for="address" class="form-label pb-2 important">Address</label>
+            <input id="address" class="form-control form-control-lg" type="text"
+                placeholder="enter Address" aria-label=".form-control-sm example"  onkeyup="validateAddress()">
+                <span id="AddressError"class="empty"></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row pt-4">
+        <div class="col-lg-6 col-sm-12">
+            <label for="country" class="form-label pb-2 important fondspace">Country</label>
+            <select id="country" class="form-select form-select-lg p-2"
+                aria-label="Default select example"onchange="validateCountry()">
+                <option value="" selected>Select</option>
+                <option value="india">India</option>
+                <option value="brazil">brazil</option>
+                <option value="japan">japan</option>
+                <option value="canada">canada</option>
+            </select>
+            <span id="CountryError"class="empty"></span>
+
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <label for="state" class="form-label pb-2 important fondspace">State</label>
+            <select id="state" class="form-select form-select-lg p-2"
+                aria-label="Default select example"onclick="validateState()" onchange="validateState()">
+                <option value="" selected>Select</option>
+                <option value="kerala">kerala</option>
+                <option value="odisha">odisha</option>
+                <option value="rajasthan">rajasthan</option>
+                <option value="rajasthan">Alberta</option>
+            </select>
+            <span id="StateError"></span>
+
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col-lg-6">
+            <label for="city" class="form-label pb-2 important">City</label>
+            <input id="city" class="form-control form-control-lg" type="text"
+                placeholder="enter city" aria-label=".form-control-sm example"  onkeyup="validateCity()">
+                <span id="CityError"class="empty"></span>
+
+        </div>
+        <div class="col-lg-6">
+            <label for="pin" class="form-label pb-2 important fondspace">Pin/Zip</label>
+            <input id="pin" class="form-control form-control-lg" type="text"
+                placeholder="enter " aria-label=".form-control-sm example" onkeyup="validatepin()" onclick="validatepin()">
+                <span id="PinZipError"class="empty"></span>
+        </div>
+    </div>
+    <!-- </div> -->
+
+
+
+
+    <section class="pt-4 button d-flex justify-content-end bg footer w-100">
+        <!-- <div class=" d-flex  bg footer w-100"> -->
+
+        <button type="button" onclick="closeup()" id="addEmployeeFormCancel" class="btn btn-light">Cancel</button>
+        <!-- <button type="button" onclick="addemployee()"   id="Addemployee" class="btn btn-primary">Add
+            Employee</button> -->
+        <button type="button" onclick="update() " id="updatedbtn" class="btn btn-primary">Save
+            Changes</button>
+
+        <!-- </div> -->
+    </section>
+
+</form>
+
+<!-- close add employee form -->
+    <!--..........delete form.......................  -->
+    <!-- <form id="deleteform" class="modal-content ">
+        <div class="deletes containers">
+            <div class="delete-box">
+                <h3 class="delete">Delete Account</h3>
+                <div class="icon">
+                    <button id="deleteformclose">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            <p>Are you sure you want to delete your account?</p>
+            <section class="pt-4 button d-flex justify-content-end bg footer w-100">
+
+                <button onclick="closeup()" id="deleteformcancel" type="button"
+                    class=" deletebtn  cancel-btn" >Cancel</button>
+                <button type="button"  id="DELETEEMPLOYEEbtn"
+                    class="deletebtn delete-btn">Delete</button>
+
+            </section>
+        </div>
+    </form> -->
+    <form id="deleteform" class="modal-content ">
+        <div class="deletes containers">
+            <div class="delete-box">
+                <h3 class="delete">Delete Account</h3>
+                <div class="icon">
+                    <button type="button" onclick="closeup()" id="deleteformclose">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            <p>Are you sure you want to delete your account?</p>
+    
+            <section class="pt-4 button d-flex justify-content-end bg footer w-100">
+    
+                <button type="button" onclick="closeup()" id="deleteformcancel"  class=" deletebtn  cancel-btn">Cancel</button>
+                <button type="button" id="DELETEEMPLOYEEbtn" class="deletebtn delete-btn">Delete</button>
+    
+            </section>
+        </div>
+    </form>
+    <!-- .................deleteform closing......... -->
+
+<!-- edit succesfully -->
+
+  <!-- delete succesfully form -->
+
+  <div class="editpopup" id="editpopups">
+
+    <div class="col-md-5 ">
+        <div id="success-popup" class="bg-white p-3 rounded-3 radius shadow-sm border">
+            <div>
+                <p class="text-success"><i class="fa-solid fa-trash-can trash-icon"></i></p>
+                <p class="text-center h5">"edited  Successfully"</p>
+                <!-- <p class="text-muted text-center">We've sent a code to contact@curfcode.com</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+   
+
+</header>
+
+
+
+    <div id="overlay"></div>
+    <script src="/javascript/view.js">
+    </script>
+
+</body>
+</html>

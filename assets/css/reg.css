@@ -1,0 +1,86 @@
+/* Add this CSS to your stylesheet */
+
+/* General styling for the row */
+.row {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Styling for the column */
+.col-md-5 {
+    max-width: 41.666667%; /* Equivalent to 5/12 of the container width in a 12-column grid */
+}
+
+/* Add margin top for spacing */
+.mt-5 {
+    margin-top: 3rem; /* Adjust as needed */
+}
+/* Styling for the success popup container */
+#success-popup {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.375rem; /* Slightly rounded corners */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Soft shadow for a subtle 3D effect */
+    border: 2px solid transparent; /* Initial transparent border */
+    outline: 2px solid transparent; /* Initial transparent outline */
+    position: relative; /* Required for absolute positioning of animated outline */
+}
+
+/* Animation for the outline */
+@keyframes outline-animation {
+    0% { 
+        border-color: transparent; 
+        outline-color: transparent; 
+    }
+    50% { 
+        border-color: #a7285f; /* Halfway, the border becomes green */
+        outline-color: #f11d56; /* Halfway, the outline becomes green */
+    }
+    100% { 
+        border-color: transparent; 
+        outline-color: transparent; 
+    }
+}
+
+/* Styling for the success icon */
+#success-popup .text-success {
+    color: #ac9bf6 !important; /* Bootstrap's success color */
+    font-size: 2rem; /* Larger icon */
+    display: flex;
+    justify-content: center; /* Center the icon horizontally */
+    margin-bottom: 1rem; /* Space between the icon and the text */
+}
+
+/* Styling for the success message */
+#success-popup .h5 {
+    font-size: 1.25rem;
+    text-align: center; /* Center the text */
+    margin-bottom: 0; /* Remove default bottom margin */
+}
+
+/* Animation for the spinning icon */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#animated-icon {
+    display: inline-block;
+    animation: spin 2s linear infinite;
+}
+
+/* Apply animation to the outline */
+#success-popup::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid transparent;
+    border-radius: 0.375rem;
+    animation: outline-animation 2s linear infinite;
+}
+.text-center{
+    color: rgb(27, 211, 187);
+}

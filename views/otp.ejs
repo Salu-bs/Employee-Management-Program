@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP verification UI using bootstrap</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/otp.css">
+
+  
+</head>
+<body>
+    <form action="/verify" method="POST">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-5 mt-5">
+                    <div class="bg-white p-5 rounded-3 radius shadow-sm border">
+                        <div>
+                            <p class="text-success"><i class="fa-solid fa-envelope-circle-check envelope-icon"></i></p>
+                            <p class="text-center text-center h5">Please check your email</p>
+                            <p>We've sent an OTP to <span id="email-placeholder"></span></p>
+                            <div class="row pt-4 pb-2">
+                                <div class="col-3">
+                                    <input class="otp-letter-input" type="text" name="otp1" maxlength="1">
+                                </div>
+                                <div class="col-3">
+                                    <input class="otp-letter-input" type="text" name="otp2" maxlength="1">
+                                </div>
+                                <div class="col-3">
+                                    <input class="otp-letter-input" type="text" name="otp3" maxlength="1">
+                                </div>
+                                <div class="col-3">
+                                    <input class="otp-letter-input" type="text" name="otp4" maxlength="1">
+                                </div>
+                            </div>
+                            <p class="text-muted text-center">Didn't get the code? <a href="/verify-otp">Resend OTP</a></p>
+                            <div class="row pt-5">
+                                <div class="col-6">
+                                    <button type="button" class="btn btns-outline-secondary w-100">Cancel</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btns-success w-100">Verify</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="/javascript/otp.js"></script>
+
+</body>
+</html>
